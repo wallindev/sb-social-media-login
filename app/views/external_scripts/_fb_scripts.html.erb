@@ -1,0 +1,13 @@
+<script>
+	window.fbAsyncInit = () => {
+		FB.init({
+			appId							: '<%= ENV['FACEBOOK_APP_ID'] %>',
+			cookie						: true,
+			// xfbml							: false,
+			// status						: true,
+			// autoLogAppEvents	: true,
+			version						: 'v9.0'
+		})
+	}
+</script>
+<script async defer crossorigin="anonymous" src="//connect.facebook.net/en_US/sdk.js"></script>
