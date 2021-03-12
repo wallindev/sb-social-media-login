@@ -1,0 +1,22 @@
+<h1>OauthAuthentications Callback Page</h1>
+
+<!--<p>request.env["HTTP_REFERER"]: <%= request.env["HTTP_REFERER"] %></p>
+<p>request.env["omniauth.auth"]:
+<pre><%= JSON.pretty_generate request.env["omniauth.auth"] %></pre>
+</p>-->
+
+<p><< <%= link_to "OauthAuthentications Start Page", '/oauth_authentications/start' %></p>
+
+<h3>Raw data</h3>
+<p>Message: <b><%= @data[:message] %></b></p>
+<p>Success: <b><%= @data[:success] %></b></p>
+<p>Provider: <b><%= @data[:provider] %></b></p>
+<p>Referer (request.env["HTTP_REFERER"]): <b><%= @data[:referer] %></b></p>
+<p>Omniauth Auth (request.env["omniauth.auth"]): <pre><b><%= JSON.pretty_generate @data[:omniauth_auth] %></b></pre></p>
+
+<h3>JSON parsed data</h3>
+<p>Message: <b><%= @json_data['message'] %></b></p>
+<p>Success: <b><%= @json_data['success'] %></b></p>
+<p>Provider: <b><%= @json_data['provider'] %></b></p>
+<p>Referer (request.env["HTTP_REFERER"]): <b><%= @json_data['referer'] %></b></p>
+<p>Omniauth Auth (request.env["omniauth.auth"]): <pre><b><%= JSON.pretty_generate @json_data['omniauth_auth'] %></b></pre></p>
