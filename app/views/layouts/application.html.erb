@@ -12,6 +12,14 @@
 
   <body>
 		<%= render 'external_scripts/fb_scripts' %>
+  <%= javascript_tag do %>
+    window.credentials = {
+      FACEBOOK_APP_ID: "<%= Rails.application.credentials.dig(:development, :FACEBOOK_APP_ID) %>",
+      FACEBOOK_APP_SECRET: "<%= Rails.application.credentials.dig(:development, :FACEBOOK_APP_SECRET) %>",
+      GOOGLE_CLIENT_ID: "<%= Rails.application.credentials.dig(:development, :GOOGLE_CLIENT_ID) %>",
+      GOOGLE_CLIENT_SECRET: "<%= Rails.application.credentials.dig(:development, :GOOGLE_CLIENT_SECRET) %>"
+    }
+  <% end %>
     <%= yield %>
   </body>
 </html>
