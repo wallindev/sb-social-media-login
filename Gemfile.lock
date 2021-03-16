@@ -369,7 +369,6 @@ DEPENDENCIES
   mailchimp-api
   mailgun-ruby (~> 1.2.0)
   newrelic_rpm
-  omniauth
   omniauth-facebook
   omniauth-google-oauth2
   pg (~> 1.2.3)
