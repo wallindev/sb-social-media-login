@@ -46,6 +46,7 @@ gem 'stripe', '~>5.28.0'
 gem 'mailgun-ruby', '~>1.2.0'
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'newrelic_rpm'
+# gem 'honeybadger'
 
 # Other tools
 gem 'awesome_print', :require => 'ap'
@@ -93,8 +94,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Nya
-gem "activerecord", "~> 5.2"
-
-gem "sqlite3", "~> 1.4"
