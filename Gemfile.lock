@@ -315,7 +315,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     stripe (5.28.0)
     sucker_punch (2.1.2)
       concurrent-ruby (~> 1.0)
@@ -347,7 +346,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 5.2)
   annotate
   awesome_print
   bcrypt (~> 3.1.7)
@@ -391,7 +389,6 @@ DEPENDENCIES
   spork-rails!
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
   stripe (~> 5.28.0)
   sucker_punch
   tzinfo-data
