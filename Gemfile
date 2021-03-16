@@ -34,9 +34,10 @@ gem 'webpacker', '>= 4.0.x'
 # Authentication, Authorization and Credentials
 gem 'pundit'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
+# gem 'omniauth' #default 1.9.1
+# gem 'omniauth-oauth2' #default 1.7.0
+gem 'omniauth-facebook' #default 5.0.0
+gem 'omniauth-google-oauth2' #default: 0.8.1
 gem 'koala'#, '~> 3.0'
 gem 'jwt'
 
